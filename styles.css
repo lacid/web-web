@@ -215,6 +215,7 @@ textarea {
   color: white;
   margin-top: 10px;
   cursor: pointer;
+  transition: 1s all;
 }
 
 #submit:hover {
