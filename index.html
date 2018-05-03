@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>web.portfolio</title>
+          <meta charset="utf-8">
           <link href="styles.css" rel="stylesheet" type="text/css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+          <link rel="stylesheet" href="js/aos.css">
     </head>
 
     <body>
+      <header>
+        <div class="navbar"> <!--not sure if needed -->
+          <ul> <!-- nav bar via list -->
+            <li><a data-scroll href="#c4">Contact</a></li>
+            <li><a data-scroll href="#c3">Works</a></li>
+            <li><a data-scroll href="#c2">Experience</a></li>
+            <li><a data-scroll href="#c1">About</a></li>
+            <li><a data-scroll href="#">Home</a></li> <!-- href="#" vrati hore -->
+            <li id="logo">ladislav balicky</li> <!-- tu nevim jak dat <a> aby sa to nedototo -->
+        </ul>
+      </div>
 
-    </body>
+      <div class="title">
+        <p>Hello,</p>
+        <p>I am lorem</p>
+        <p>front end developer</p>
+      </div>
+    </header>
+
+    <div class="content">
+      <div data-aos="fade-left" class="about">
+        <h1 id="c1">About</h1>
+          <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+
+      <div data-aos="fade-right">
+        <h1 id="c2">Experience</h1>
+        <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+
+      <div data-aos="fade-left">
+        <h1 id="c3">Works</h1>
+        <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+
+      <div class="form" data-aos="fade-right"> <!-- form  bavi jaks taks-->
+        <h1 id="c4">Contact</h1>
+          <section >
+            <form method="post" action="/missing.backend.rb">
+              <label>Name</label>
+              <input name="name" placeholder="Enter your name here .. ">
+              <label>Email</label>
+              <input name="email" type="email" placeholder="Past your email address here please .. ">
+              <label>Message</label>
+              <textarea name="message" placeholder="Write your thoughts here .. "></textarea>
+              <input id="submit" name="submit" type="submit" value="Submit">
+            </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>Rastislavova 747/4, 040 01 Kosice</br>ladislav.balicky@gmail.com</p>
+    </div>
+
+    <footer>
+      <a class="icon" href=”https://www.twitter.com/acid_balicky/” target="_blank" title="twitter"><img src="img/twitter.svg" alt="Twitter" width=24px></a> <!-- ako zmenit za ako rychlo sa tooltip ukaze? iba js? -->
+      <a class="icon" href=”https://www.linkedin.com/in/ladislav-balicky-1a771219/” target="_blank" title="LinkedIn"><img src="img/linkedin.svg" alt="LinkedIn" width=24px></a>
+      <a class="icon" href=”https://www.github.com/lacid/” target="_blank" title="GitHub"><img src="img/github.svg" alt="GitHub" width=24px></a>
+      <a class="icon" href=”https://www.codepen.io/lacid/” target="_blank" title="codepen"><img src="img/codepen.svg" alt="Codepen" width=24px></a>
+      <p class="foot">copyleft &copy; by Ladislav Balicky 2018 | keep all your rights</p>
+    </footer>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script> <!-- animate on scroll rozbehany -->
+    <script>AOS.init();</script>
+    <script src="js/smooth-scroll.js"></script> <!-- smooth-scroll rozbehany -->
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+  </body>
 </html>
+
 <!--  la.ba
 Navigáciu teda Obsah
 Predstavenie - nejaky header s peckom
 Zručnosti nejake pecko
 Skúsenosti nejake pecko
-Portfólio odkazy na nejaky bordel
+Portfólio odkazy na nejaky bordel, kery som nespravil
 Kontakt v Päta - footer s ikonkou alebo tabulka ze daj email ..
 -->

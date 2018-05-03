@@ -1,3 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton'); /*importing special font for name*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@keyframes example {
+    0%   {color:grey; left:0px; top:0px;}
+    25%  {color:darkgray; left:200px; top:0px;}
+    50%  {color:white; left:200px; top:200px;} /* snazi sa to simulovat daky prechod */
+    75%  {color:darkgray; left:0px; top:200px;}
+    100% {color:dimgray; left:0px; top:0px;}  }
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 872px) { /* ked to zmensi. je blby direction ale cez ltr;rtl nebavi.. */
+    ul li a {
+      color: lightgrey;
+      float: none;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      padding-top: 5px;
+      margin-top: 5px;
+  }
+  li a:hover {
+    cursor: pointer !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-bottom: none !important;
+  }
+  .navbar {
+    background-color: #000 !important;
+  }
+  #logo {
+    visibility: hidden;
+    transition: unset !important; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
+  }
+}
+
+.navbar {
+  background-color: #0001;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 20px 10px 20px 40px;
+  overflow: hidden;
+}
+
+li a {
+  font: 14px "Fira Sans", sans-serif;
+  float: right;
+  display: block;
+  color: black;
+  margin: 0 30px 0 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  cursor: pointer;
+  color: black;
+  border-bottom: solid 2px red;
+}
+
+#logo {
+  font-size: 14px;
+  font-family:'Monoton', cursive;
+  margin: 0 30px 0 100px;
+  color: dimgray;
+  display: inline-block; /* ze neje to ako element na cely riadok */
+  transition: 1s all; /* detail ale v podstate hover off */
+}
+
+#logo:hover {
+  cursor: pointer;
+  color: black;
+  transition: 1s all;
+}
+
+.title {
+  display: block;
+  background: url("img/curtain-hands-indoors.jpg") no-repeat;
+  background-size: cover;
+  padding: 300px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title :first-child {          /* below akoze pseudo-classes */
+  font-size: 16px !important;
+  margin-bottom: 30px;
+}
+
+.title :nth-child(2) {
+  font-size: 60px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title :last-child {
+  font-size: 30px !important;
+  animation: example 5s infinite;  /* just stupid animation, must do something better */
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.about {
+  background-size: cover;
+  overflow: hidden;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.content p, h1 {
+  width: 80vw;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*.form {        nebavi!!!!
+  background: url("img/background-black-coffee-caffeine.jpg");
+  background-size: center;
+  filter: blur(4px);
+  height: 100%;
+  width: 100%;
+  padding: 200px;
+} */
+
+form {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+label {
+  visibility: hidden;
+}
+
+input, textarea {
+	width: 40vw;
+	height: auto;
+  position: relative;
+	background: #0001;
+	border: 1px solid darkgrey;
+	padding: 10px;
+	font-size: 14px;
+  font-style: italic;
+	color: black;
+}
+
+textarea {
+	height: 200px;
+}
+
+#submit {
+  font-weight: bold;
+  position: relative;
+  border: 1px solid tomato;
+  background-color: tomato;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#submit:hover {
+	opacity: 0.9;
+  color: tomato;
+  background-color: inherit;
+  transition: 1s all; /* I like transition */
+}
+
+.contact {
+  line-height: -50px;
+  font-style: italic;
+  text-align: center;
+  width: auto;
+  margin: 60px 0 -60px 0;
+  padding: 10px;
+  line-height: -5px;
+  color: darkgrey;
+}
+
+footer {
+  color: darkgrey;
+  font-size: 11px;
+  margin-top: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.icon {
+  margin: 5px;
 }
