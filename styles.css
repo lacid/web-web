@@ -26,20 +26,23 @@ body {
       text-decoration: none;
       padding-top: 5px;
       margin-top: 5px;
-  }
-  li a:hover {
-    cursor: pointer !important;
-    color: white !important;
-    font-weight: bold !important;
-    border-bottom: none !important;
-  }
-  .navbar {
-    background-color: #000 !important;
-  }
-  #logo {
-    visibility: hidden;
-    transition: unset !important; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
-  }
+    }
+    li a:hover {
+      cursor: pointer !important;
+      color: white !important;
+      font-weight: bold !important;
+      border-bottom: none !important;
+    }
+    .navbar {
+      background-color: #000 !important;
+    }
+    #logo {
+      visibility: hidden;
+      transition: unset !important; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
+    }
+    textarea {
+      height: 100px !important;
+    }
 }
 
 .navbar {
@@ -75,7 +78,7 @@ li a:hover {
   font-family:'Monoton', cursive;
   margin: 0 30px 0 100px;
   color: dimgray;
-  display: inline-block; /* ze neje to ako element na cely riadok */
+  display: inline-block; /* inak by ukazalo pointer na cely riadok, block */
   transition: 1s all; /* detail ale v podstate hover off */
 }
 
@@ -86,10 +89,12 @@ li a:hover {
 }
 
 .title {
-  display: block;
-  background: url("img/curtain-hands-indoors.jpg") no-repeat;
+  background-image: url("img/curtain-hands-indoors.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  padding: 300px;
+  height: 100vh; /* viewport height, som vycital ze lepsie takto */
+  padding-top: 40vh;
   width: 100%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -130,18 +135,51 @@ li a:hover {
   line-height: 30px;
 }
 
-/*.form {        nebavi!!!!
-  background: url("img/background-black-coffee-caffeine.jpg");
-  background-size: center;
-  filter: blur(4px);
+}
+.works {
+  width: 100%;
+}
+
+#works1 {
+    width: 33%;
+    border: 1px solid red;
+}
+
+#works2 {
+    width: 33%;
+    border: 1px solid green;
+}
+
+#works3 {
+    width: 33%;
+    border: 1px solid blue;
+}
+
+.form {
+  background-image: url("img/background-black-coffee-caffeine.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.overlay {             /* nejak som ten overlay spojazdnil, neje to az taka pecka teda  */
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
-  padding: 200px;
-} */
+  z-index: 5;
+}
 
 form {
   display: block;
   margin: auto;
+  padding-top: 20vh;
   width: 40%;
 }
 
@@ -158,11 +196,15 @@ input, textarea {
 	padding: 10px;
 	font-size: 14px;
   font-style: italic;
-	color: black;
+	color: white;
 }
 
 textarea {
 	height: 200px;
+}
+
+#c4 {
+  color: darkgrey;
 }
 
 #submit {
@@ -196,7 +238,7 @@ textarea {
 footer {
   color: darkgrey;
   font-size: 11px;
-  margin-top: 80px;
+  margin-top: 55px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;

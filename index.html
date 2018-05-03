@@ -30,8 +30,8 @@
     </header>
 
     <div class="content">
-      <div data-aos="fade-left" class="about">
-        <h1 id="c1">About</h1>
+      <div  id="c1" data-aos="fade-left" class="about">
+        <h1>About</h1>
           <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -40,8 +40,8 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
 
-      <div data-aos="fade-right">
-        <h1 id="c2">Experience</h1>
+      <div id="c2"data-aos="fade-right">
+        <h1>Experience</h1>
         <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -50,40 +50,57 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
 
-      <div data-aos="fade-left">
-        <h1 id="c3">Works</h1>
-        <p>Hi I am "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+
+      <div class="works">
+        <h1>Works</h1>
+
+          <div id="works1" data-aos="fade-left">
+          <p data-height="265" data-theme-id="0" data-slug-hash="KQgQyb" data-default-tab="result" data-user="lacid" data-embed-version="2" data-pen-title="pixel.art.maker" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/lacid/pen/KQgQyb/">pixel.art.maker</a> by Ladislav (<a href="https://codepen.io/lacid">@lacid</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+
+          <div id="works2" data-aos="fade-right">
+          <p data-height="224" data-theme-id="dark" data-slug-hash="wpeOOa" data-default-tab="html,result" data-user="lacid" data-embed-version="2" data-pen-title="Animal Trading Card" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/lacid/pen/wpeOOa/">Animal Trading Card</a> by Ladislav (<a href="https://codepen.io/lacid">@lacid</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+
+          <div id="works3" data-aos="fade-left">
+          <p data-height="265" data-theme-id="dark" data-slug-hash="XZjZqW" data-default-tab="result" data-user="lacid" data-embed-version="2" data-pen-title="Mockup" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/lacid/pen/XZjZqW/">Mockup</a> by Ladislav (<a href="https://codepen.io/lacid">@lacid</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </div>
+
       </div>
 
-      <div class="form" data-aos="fade-right"> <!-- form  bavi jaks taks-->
-        <h1 id="c4">Contact</h1>
-          <section >
+
+
+      <div data-aos="fade-right"> <!-- form  bavi jaks taks-->
+          <section class="form">
+           <div class="overlay">
+             <h1 id="c4">Contact</h1>
             <form method="post" action="/missing.backend.rb">
               <label>Name</label>
-              <input name="name" placeholder="Enter your name here .. ">
+              <input name="name" placeholder="Enter your name .. " required>
               <label>Email</label>
-              <input name="email" type="email" placeholder="Past your email address here please .. ">
+              <input name="email" type="email" placeholder="Past your email address please .. " required>
               <label>Message</label>
-              <textarea name="message" placeholder="Write your thoughts here .. "></textarea>
+              <textarea name="message" placeholder="Write your thoughts .. "></textarea>
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
+          </div>
         </section>
       </div>
     </div>
 
     <div class="contact">
-      <p>Rastislavova 747/4, 040 01 Kosice</br>ladislav.balicky@gmail.com</p>
+      <p>Rastislavova 4, 040 01 Kosice</br>ladislav.balicky@gmail.com</p>
     </div>
 
     <footer>
       <a class="icon" href='https://www.twitter.com/acid_balicky/' target='_blank' title='twitter'><img src='img/twitter-logo.svg' alt='Twitter' width=24px></a> <!-- ako zmenit za ako rychlo sa tooltip ukaze? iba js? -->
       <a class="icon" href='https://www.linkedin.com/in/ladislav-balicky-1a771219/' target='_blank' title='LinkedIn'><img src='img/linkedin-logo.svg' alt='LinkedIn' width=24px></a>
       <a class="icon" href='https://www.github.com/lacid/' target='_blank' title='GitHub'><img src='img/github.svg' alt='GitHub' width=24px></a>
+      <a class="icon" href='https://stackoverflow.com/users/5186655/lacid' target='_blank' title='StackOverflow'><img src='img/stackoverflow.svg' alt='StackOverflow' width=24px></a>
       <a class="icon" href='https://www.codepen.io/lacid/' target='_blank' title='codepen'><img src='img/codepen.svg' alt='Codepen' width=24px></a>
       <p class="foot">copyleft &copy; by Ladislav Balicky 2018 | keep all your rights</p>
     </footer>
