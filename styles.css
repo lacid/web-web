@@ -164,6 +164,7 @@ li a:hover {
   height: 60vh;
   width: 100%;
   padding-top: 200px;
+  box-sizing: content-box;
 }
 
 .overlay {             /* nejak som ten overlay spojazdnil, neje to az taka pecka teda  */
@@ -225,7 +226,7 @@ textarea {
   transition: 1s all; /* I like transition */
 }
 
-.contact {
+.address {
   line-height: -50px;
   font-style: italic;
   text-align: center;
