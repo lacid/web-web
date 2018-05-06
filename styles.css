@@ -5,13 +5,15 @@
     25%  {color:darkgray; left:200px; top:0px;}
     50%  {color:white; left:200px; top:200px;} /* snazi sa to simulovat daky prechod */
     75%  {color:darkgray; left:0px; top:200px;}
-    100% {color:dimgray; left:0px; top:0px;}  }
+    100% {color:dimgray; left:0px; top:0px;}
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  height: 100%; /* recently added */
   max-width: 100%;
   margin: auto;
   position: relative;
@@ -43,12 +45,32 @@ body {
     textarea {
       height: 100px !important;
     }
+    .works {
+      display: block !important;
+      width: 100% !important;
+    }
+    #works1 {
+        padding: 20px 20px 0 20px;
+        float: none !important;
+        width: auto !important;
+    }
+    #works2 {
+        padding: 20px 20px 0 20px;
+        float: none !important;
+        width: auto !important;
+    }
+    #works3 {
+        padding: 20px 20px 0 20px;
+        float: none !important;
+        width: auto !important;
+    }
 }
 
 .navbar {
   background-color: #0001;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 ul {
@@ -75,7 +97,7 @@ li a:hover {
 
 #logo {
   font-size: 14px;
-  font-family:'Monoton', cursive;
+  font-family: 'Monoton', cursive;
   margin: 0 30px 0 100px;
   color: dimgray;
   display: inline-block; /* inak by ukazalo pointer na cely riadok, block */
@@ -135,28 +157,46 @@ li a:hover {
   line-height: 30px;
 }
 
-}
+} /*???*/
 .works {
+  display: flex;
   width: 100%;
 }
 
+.works::after {   /* clearfix */
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #works1 {
-    width: 33%;
-    border: 1px solid red;
+    padding: 20px 20px 0 20px;
+    float: left;
+    width: 33.3333%;
 }
 
 #works2 {
-    width: 33%;
-    border: 1px solid green;
+    padding: 20px 20px 0 20px;
+    float: left;
+    width: 33.3333%;
 }
 
 #works3 {
-    width: 33%;
-    border: 1px solid blue;
+    padding: 20px 20px 0 20px;
+    float: left;
+    width: 33.3333%;
+}
+
+.place {
+  margin: 80px;
+  border-top: 2px solid gold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .form {
   background-image: url("img/background-black-coffee-caffeine.jpg");
+  background-attachment: fixed; /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -164,10 +204,10 @@ li a:hover {
   height: 60vh;
   width: 100%;
   padding-top: 200px;
-  box-sizing: content-box;
+  box-sizing: content-box;   /* ??????!!!!!!???? */
 }
 
-.overlay {             /* nejak som ten overlay spojazdnil, neje to az taka pecka teda  */
+.overlay {      /* nejak som ten overlay spojazdnil aka stmavi pozadie */
   position: absolute;
   background-color: rgba(0,0,0,0.8);
   top: 0;
@@ -180,7 +220,7 @@ li a:hover {
 form {
   display: block;
   margin: auto;
-  padding-top: 20vh;
+  padding-top: 5%;
   width: 40%;
 }
 
@@ -205,6 +245,8 @@ textarea {
 }
 
 #c4 {
+  /* border: 1px solid red; */
+  padding-top: 5%;
   color: darkgrey;
 }
 
@@ -220,7 +262,6 @@ textarea {
 }
 
 #submit:hover {
-	opacity: 0.9;
   color: tomato;
   background-color: inherit;
   transition: 1s all; /* I like transition */
