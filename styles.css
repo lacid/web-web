@@ -114,6 +114,7 @@ li a:hover {
   background-image: url("img/curtain-hands-indoors.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh; /* viewport height, som vycital ze lepsie takto */
   padding-top: 40vh;
@@ -157,6 +158,74 @@ li a:hover {
   line-height: 30px;
 }
 
+#photo {
+  background-image: url("img/ladislav.balicky.jr.bk.jpg");
+  background-size: 160px;
+  display: inline-block;
+  float: left;
+  margin-left: 40px;
+  height: 285px;
+  width: 160px;
+  transition: 1s all;
+}
+
+#photo:hover {
+  background-image: url("img/ladislav.balicky.jr.jpg") !important;
+  transition: 1s all;
+}
+
+.place {
+  /* margin: 40px;
+  border-top: 2px solid gold; */
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+#blue {
+  background-image: url("img/sunset-blue.jpg");
+  background-attachment: fixed; /* parallax effect */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  height: 100px;
+  padding-top: 40px;
+  margin: 0 !important;
+  margin-top: 30px !important;
+  width: 100%;
+}
+
+#green {
+  background-image: url("img/sunset-green.jpg");
+  background-attachment: fixed; /* parallax effect */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  height: 100px;
+  padding-top: 40px;
+  margin: 0 !important;
+  margin-top: 30px !important;
+  width: 100%;
+}
+
+#red {
+  background-image: url("img/sunset-red.jpg");
+  background-attachment: fixed; /* parallax effect */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  height: 100px;
+  padding-top: 40px;
+  margin: 0 !important;
+  margin-top: 30px !important;
+  width: 100%;
+  margin-bottom: 40px !important;
+}
+
 } /*???*/
 .works {
   display: flex;
@@ -185,13 +254,6 @@ li a:hover {
     padding: 20px 20px 0 20px;
     float: left;
     width: 33.3333%;
-}
-
-.place {
-  margin: 80px;
-  border-top: 2px solid gold;
-  text-align: center;
-  font-weight: bold;
 }
 
 .form {
