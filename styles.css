@@ -121,6 +121,8 @@ li a:hover {
   width: 100%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  box-shadow: inset 0px -1px 20px 0px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.4);  cant decide but ^^ seems better*/
 }
 
 .title :first-child {          /* below akoze pseudo-classes */
@@ -197,6 +199,7 @@ li a:hover {
   margin-bottom: 80px !important;
   margin-top: 80px !important;
   width: 100%;
+  box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.4);
 }
 
 #green {
@@ -212,6 +215,7 @@ li a:hover {
   margin-bottom: 80px !important;
   margin-top: 80px !important;
   width: 100%;
+  box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.4);
 }
 
 #red {
@@ -228,6 +232,7 @@ li a:hover {
   width: 100%;
   margin-bottom: 80px !important;
   margin-top: 80px !important;
+  box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.4);
 }
 
 } /*???*/
@@ -275,6 +280,7 @@ h1 {
   width: 100%;
   padding-top: 200px;
   box-sizing: content-box;   /* ??????!!!!!!???? */
+  box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.4);
 }
 
 .overlay {      /* nejak som ten overlay spojazdnil aka stmavi pozadie */
