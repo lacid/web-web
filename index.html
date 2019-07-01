@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      window.addEventListener('load', () => {
+        const preload = document.querySelector('.preload');
+        preload.classList.add('preload-done');
+      });
+    </script>
   </head>
 
   <body>
+    <div class="preload">
+      <img src="img/three-dots.svg" alt="preload" />
+    </div>
+
     <header>
       <div class="navbar">
         <!--not sure if needed -->
