@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton'); /*importing special font for name*/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
-@keyframes example {
+/* @keyframes example {
   0% {
     color: grey;
     left: 0px;
@@ -26,12 +26,37 @@
     left: 0px;
     top: 0px;
   }
-}
+} */
 
+@keyframes exampleB {
+  0% {
+    color: grey;
+    opacity: 0.3;
+  }
+  25% {
+    color: darkgray;
+    opacity: 0.6;
+  }
+  50% {
+    color: white;
+    opacity: 1;
+
+  }
+  75% {
+    color: darkgray;
+    opacity: 0.7;
+
+  }
+  100% {
+    color: dimgray;
+    opacity: 0.3;
+
+  }
+}
 .preload {
   z-index: 1000;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 100%;
   height: 100vh;
   background: #787787;
@@ -188,7 +213,7 @@ li a:hover {
 
 .title :last-child {
   font-size: 30px !important;
-  animation: example 5s infinite;
+  animation: exampleB 5s infinite;
   font-weight: 400;
   letter-spacing: 1px;
 }
