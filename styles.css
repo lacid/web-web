@@ -28,31 +28,16 @@
   }
 } */
 
-@keyframes exampleB {
+@keyframes example {
   0% {
-    color: grey;
-    opacity: 0.3;
+    opacity: 0.9;
   }
-  25% {
-    color: darkgray;
-    opacity: 0.6;
-  }
-  50% {
-    color: white;
-    opacity: 1;
 
-  }
-  75% {
-    color: darkgray;
-    opacity: 0.7;
-
-  }
   100% {
-    color: dimgray;
-    opacity: 0.3;
-
+    opacity: 0.2;
   }
 }
+
 .preload {
   z-index: 1000;
   position: fixed;
@@ -63,11 +48,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.6s ease;
 } 
+
 
 .preload-done {
   opacity: 0;    /* display none would remove it from dom , cant be faded out */
+  transition: opacity 1s ease-in;
   pointer-events: none; /* cant click on it */
 }
 
@@ -155,7 +141,7 @@ li a {
   color: black;
   margin: 0 30px 0 30px;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: border 0.2s;
 }
 
 li a:hover {
@@ -168,14 +154,15 @@ li a:hover {
   font-size: 14px;
   font-family: 'Monoton', cursive;
   /* margin: 0 30px 0 0; */
-  color: dimgray;
+  /* color: dimgray; */
+  opacity: .5;
   display: inline-block;  /* inak by ukazalo pointer na cely riadok, block */
-  transition: 0.6s all;
+  transition: opacity .6s ease-in-out;
 }
 
 #logo:hover {
   cursor: default;
-  color: black;
+  opacity: 1;
 }
 
 .title {
@@ -213,7 +200,8 @@ li a:hover {
 
 .title :last-child {
   font-size: 30px !important;
-  animation: exampleB 5s infinite;
+  animation: example 4s alternate infinite;
+  color: #666;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -237,12 +225,11 @@ li a:hover {
 #photo {
   background-image: url("img/ladislav.balicky.jr.bk.jpg");
   background-size: 160px;
-  display: inline-block;
   float: left;
   margin-left: 40px;
   height: 285px;
   width: 160px;
-  transition: 1s all;
+  transition: background-image 1s ease-in-out, transform 1s ease-in-out;
 }
 
 #photo:hover {
@@ -406,7 +393,7 @@ textarea {
   color: white;
   margin-top: 10px;
   cursor: pointer;
-  transition: 1s all;
+  transition: color 1s, background-color 1s;
 }
 
 #submit:hover {
