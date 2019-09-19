@@ -49,11 +49,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} 
-
+}
 
 .preload-done {
-  opacity: 0;    /* display none would remove it from dom , cant be faded out */
+  opacity: 0; /* display none would remove it from dom , cant be faded out */
   transition: opacity 1s ease-in;
   pointer-events: none; /* cant click on it */
 }
@@ -67,58 +66,11 @@ html {
 }
 
 body {
-  height: 100%;  /* recently added */
+  height: 100%; /* recently added */
   max-width: 100%;
   /* min-width: 320px; */
   margin: 0;
   position: relative;
-}
-
-@media screen and (max-width: 872px) {  /* ked to zmensi. je blby direction ale cez ltr;rtl nebavi.. */
-  ul li a {
-    color: lightgrey;
-    float: none;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    padding-top: 5px;
-    margin-top: 5px;
-  }
-  li a:hover {
-    cursor: pointer !important;
-    color: white !important;
-    font-weight: bold !important;
-    border-bottom: none !important;
-  }
-  .navbar {
-    background-color: #000 !important;
-  }
-  #logo {
-    visibility: hidden;
-    transition: unset !important; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
-  }
-  textarea {
-    height: 100px !important;
-  }
-  .works {
-    display: block !important;
-    width: 100% !important;
-  }
-  #works1 {
-    padding: 20px 20px 0 20px;
-    float: none !important;
-    width: auto !important;
-  }
-  #works2 {
-    padding: 20px 20px 0 20px;
-    float: none !important;
-    width: auto !important;
-  }
-  #works3 {
-    padding: 20px 20px 0 20px;
-    float: none !important;
-    width: auto !important;
-  }
 }
 
 .navbar {
@@ -136,7 +88,7 @@ ul {
 }
 
 li a {
-  font: 14px "Fira Sans", sans-serif;
+  font: 14px 'Fira Sans', sans-serif;
   float: right;
   display: block;
   color: black;
@@ -156,9 +108,9 @@ li a:hover {
   font-family: 'Monoton', cursive;
   /* margin: 0 30px 0 0; */
   /* color: dimgray; */
-  opacity: .5;
-  display: inline-block;  /* inak by ukazalo pointer na cely riadok, block */
-  transition: opacity .6s ease-in-out;
+  opacity: 0.5;
+  display: inline-block; /* inak by ukazalo pointer na cely riadok, block */
+  transition: opacity 0.6s ease-in-out;
 }
 
 #logo:hover {
@@ -167,12 +119,12 @@ li a:hover {
 }
 
 .title {
-  background-image: url("img/curtain-hands-indoors.webp");
+  background-image: url('img/curtain-hands-indoors.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;  /* viewport height, som vycital ze lepsie takto */
+  height: 100vh; /* viewport height, som vycital ze lepsie takto */
   padding-top: 40vh;
   width: 100%;
   text-align: center;
@@ -183,11 +135,12 @@ li a:hover {
 
 @media screen and (max-width: 872px) {
   .title {
-    background-image: url("img/curtain-hands-indoors-sm.webp"); /*load smaller img on smaller devices*/
+    background-image: url('img/curtain-hands-indoors-sm.webp'); /*load smaller img on smaller devices*/
   }
 }
 
-.title :first-child {  /* below aka pseudo-classes */
+.title :first-child {
+  /* below aka pseudo-classes */
   font-size: 16px !important;
   margin-bottom: 30px;
 }
@@ -216,7 +169,8 @@ li a:hover {
   margin-top: 80px;
 }
 
-.content p, h1 {
+.content p,
+h1 {
   width: 80vw;
   margin: 30px auto;
   text-align: center;
@@ -224,7 +178,7 @@ li a:hover {
 }
 
 #photo {
-  background-image: url("img/ladislav.balicky.bk.webp");
+  background-image: url('img/ladislav.balicky.bk.webp');
   background-size: 160px;
   float: left;
   margin-left: 40px;
@@ -234,8 +188,8 @@ li a:hover {
 }
 
 #photo:hover {
-  background-image: url("img/ladislav.balicky.webp") !important;
-  transform: scale(1.01);  /* zoom just a tiny little bit */
+  background-image: url('img/ladislav.balicky.webp') !important;
+  transform: scale(1.01); /* zoom just a tiny little bit */
 }
 
 .place {
@@ -246,8 +200,8 @@ li a:hover {
 }
 
 #blue {
-  background-image: url("img/sunset-blue.webp");
-  background-attachment: fixed;  /* parallax effect */
+  background-image: url('img/sunset-blue.webp');
+  background-attachment: fixed; /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -262,8 +216,8 @@ li a:hover {
 }
 
 #green {
-  background-image: url("img/sunset-green.webp");
-  background-attachment: fixed;  /* parallax effect */
+  background-image: url('img/sunset-green.webp');
+  background-attachment: fixed; /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -278,8 +232,8 @@ li a:hover {
 }
 
 #red {
-  background-image: url("img/sunset-red.webp");
-  background-attachment: fixed;  /* parallax effect */
+  background-image: url('img/sunset-red.webp');
+  background-attachment: fixed; /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -294,34 +248,25 @@ li a:hover {
   box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4);
 }
 
-} /*css validator shows parse error but I need it, strange*/
-
 .works {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-}
-
-.works::after {  /* clearfix because floats */
-  content: "";
-  clear: both;
-  display: table;
 }
 
 #works1 {
   padding: 20px 20px 0 20px;
-  float: left;
   width: 33.3333%;
 }
 
 #works2 {
   padding: 20px 20px 0 20px;
-  float: left;
   width: 33.3333%;
 }
 
 #works3 {
   padding: 20px 20px 0 20px;
-  float: left;
   width: 33.3333%;
 }
 
@@ -331,8 +276,8 @@ h1 {
 }
 
 .form {
-  background-image: url("img/background-black-coffee-caffeine.webp");
-  background-attachment: fixed;  /* parallax effect */
+  background-image: url('img/background-black-coffee-caffeine.webp');
+  background-attachment: fixed; /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -340,11 +285,12 @@ h1 {
   height: 60vh;
   width: 100%;
   padding-top: 200px;
-  box-sizing: content-box;  /* ???!!!??? */
+  box-sizing: content-box; /* ???!!!??? */
   box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4);
 }
 
-.overlay {  /* overlay darkens the background */
+.overlay {
+  /* overlay darkens the background */
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
@@ -365,7 +311,8 @@ label {
   visibility: hidden;
 }
 
-input, textarea {
+input,
+textarea {
   width: 40vw;
   height: auto;
   position: relative;
@@ -423,4 +370,51 @@ footer {
 
 .icon {
   margin: 5px;
+}
+
+/*  media screen   */
+
+@media screen and (max-width: 872px) {
+  /* ked to zmensi. je blby direction ale cez ltr;rtl nebavi.. */
+  ul li a {
+    color: lightgrey;
+    float: none;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  li a:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+  }
+  .navbar {
+    background-color: #000;
+  }
+  #logo {
+    visibility: hidden;
+    transition: unset; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
+  }
+  textarea {
+    height: 100px;
+  }
+  .works {
+    display: inline-block;
+    width: 100%;
+  }
+  #works1 {
+    padding: 20px 20px 0 20px;
+    width: auto;
+  }
+  #works2 {
+    padding: 20px 20px 0 20px;
+    width: auto;
+  }
+  #works3 {
+    padding: 20px 20px 0 20px;
+    width: auto;
+  }
 }
