@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton'); /*importing special font for name*/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
 /* @keyframes example {
   0% {
     color: grey;
@@ -166,7 +167,7 @@ li a:hover {
 }
 
 .title {
-  background-image: url("img/curtain-hands-indoors.jpg");
+  background-image: url("img/curtain-hands-indoors.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -182,7 +183,7 @@ li a:hover {
 
 @media screen and (max-width: 872px) {
   .title {
-    background-image: url("img/curtain-hands-indoors-sm.jpg"); /*load smaller img on smaller devices*/
+    background-image: url("img/curtain-hands-indoors-sm.webp"); /*load smaller img on smaller devices*/
   }
 }
 
@@ -223,7 +224,7 @@ li a:hover {
 }
 
 #photo {
-  background-image: url("img/ladislav.balicky.jr.bk.jpg");
+  background-image: url("img/ladislav.balicky.bk.webp");
   background-size: 160px;
   float: left;
   margin-left: 40px;
@@ -233,7 +234,7 @@ li a:hover {
 }
 
 #photo:hover {
-  background-image: url("img/ladislav.balicky.jr.jpg") !important;
+  background-image: url("img/ladislav.balicky.webp") !important;
   transform: scale(1.01);  /* zoom just a tiny little bit */
 }
 
@@ -245,7 +246,7 @@ li a:hover {
 }
 
 #blue {
-  background-image: url("img/sunset-blue.jpg");
+  background-image: url("img/sunset-blue.webp");
   background-attachment: fixed;  /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
@@ -261,7 +262,7 @@ li a:hover {
 }
 
 #green {
-  background-image: url("img/sunset-green.jpg");
+  background-image: url("img/sunset-green.webp");
   background-attachment: fixed;  /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
@@ -277,7 +278,7 @@ li a:hover {
 }
 
 #red {
-  background-image: url("img/sunset-red.jpg");
+  background-image: url("img/sunset-red.webp");
   background-attachment: fixed;  /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
@@ -300,7 +301,7 @@ li a:hover {
   width: 100%;
 }
 
-.works::after {  /* clearfix */
+.works::after {  /* clearfix because floats */
   content: "";
   clear: both;
   display: table;
@@ -330,7 +331,7 @@ h1 {
 }
 
 .form {
-  background-image: url("img/background-black-coffee-caffeine.jpg");
+  background-image: url("img/background-black-coffee-caffeine.webp");
   background-attachment: fixed;  /* parallax effect */
   background-repeat: no-repeat;
   background-position: center center;
@@ -339,7 +340,7 @@ h1 {
   height: 60vh;
   width: 100%;
   padding-top: 200px;
-  box-sizing: content-box;  /* ??????!!!!!!???? */
+  box-sizing: content-box;  /* ???!!!??? */
   box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.4);
 }
 
