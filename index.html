@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- preload^? -->
+    <!-- <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" /> -->
+    <!-- i dont even need that css.. preload^? always use as="style" to avoid err -->
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       window.addEventListener('load', () => {
@@ -23,17 +23,14 @@
 
     <header>
       <div class="navbar">
-        <!--not sure if needed -->
-
         <ul>
-          <li><a data-scroll href="#c4">Contact</a></li>
-          <li><a data-scroll href="#c3">Works</a></li>
-          <li><a data-scroll href="#c2">Experience</a></li>
-          <li><a data-scroll href="#c1">About</a></li>
-          <li><a data-scroll href="#">Home</a></li>
+          <li><a class="navItem" data-scroll href="#c4">Contact</a></li>
+          <li><a class="navItem" data-scroll href="#c3">Works</a></li>
+          <li><a class="navItem" data-scroll href="#c2">Experience</a></li>
+          <li><a class="navItem" data-scroll href="#c1">About</a></li>
+          <li><a class="navItem" data-scroll href="#">Home</a></li>
           <!-- href="#" vrati hore -->
-          <li id="logo">ladislav balicky</li>
-          <!-- how <a> this << -->
+          <li><a class="logo" href="#">ladislav balicky</a></li>
         </ul>
       </div>
 
@@ -229,18 +226,5 @@
         copyleft &copy; by Ladislav Balicky 2018 | keep all your rights
       </p>
     </footer>
-
-    <!-- animate on scroll -->
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
-
-<!--  la.ba
-Navigácia - Obsah
-Predstavenie - About
-Skúsenosti - Experience
-Zručnosti - Works
-Kontakt v Päta - footer s ikonkou a tabulka,form na email ..
--->

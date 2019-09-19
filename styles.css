@@ -87,7 +87,7 @@ ul {
   overflow: hidden;
 }
 
-li a {
+li .navItem {
   font: 14px 'Fira Sans', sans-serif;
   float: right;
   display: block;
@@ -97,24 +97,24 @@ li a {
   transition: border 0.2s;
 }
 
-li a:hover {
+li .navItem:hover {
   cursor: pointer;
   color: black;
   border-bottom: solid 2px red;
 }
 
-#logo {
+.logo {
   font-size: 14px;
   font-family: 'Monoton', cursive;
-  /* margin: 0 30px 0 0; */
-  /* color: dimgray; */
+  text-decoration: none;
+  color: black;
   opacity: 0.5;
   display: inline-block; /* inak by ukazalo pointer na cely riadok, block */
   transition: opacity 0.6s ease-in-out;
 }
 
-#logo:hover {
-  cursor: default;
+.logo:hover {
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -376,7 +376,7 @@ footer {
 
 @media screen and (max-width: 872px) {
   /* ked to zmensi. je blby direction ale cez ltr;rtl nebavi.. */
-  ul li a {
+  ul li .navItem {
     color: lightgrey;
     float: none;
     text-align: center;
@@ -385,7 +385,7 @@ footer {
     padding-top: 5px;
     margin-top: 5px;
   }
-  li a:hover {
+  li .navItem:hover {
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -394,7 +394,7 @@ footer {
   .navbar {
     background-color: #000;
   }
-  #logo {
+  .logo {
     visibility: hidden;
     transition: unset; /* som musel vypnut lebo pomaly mizol ten nadpis; ktory by tam bol na nic ajtak */
   }
